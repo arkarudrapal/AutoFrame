@@ -1,19 +1,27 @@
 package org.autoframe.arpal.Steps;
 
+import org.autoframe.arpal.implement.HomeImplement;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 //import cucumber.api.java.en.When;
 
 public class Home {
-	
-	@Given("^the Google URL$")
-	public void theGoogleURL() throws Throwable {
-	    
+
+	HomeImplement hm;
+
+	public Home(HomeImplement hm) {
+		this.hm = hm;
 	}
 
-	@Then("^search Ronaldo$")
-	public void searchRonaldo() throws Throwable {
-	    
+	@Given("^the mailinator URL$")
+	public void theMailinatorURL() throws Throwable {
+		hm.enterHomeText();
+	}
+
+	@Then("^click Email link$")
+	public void clickEmailLink() throws Throwable {
+		hm.clickEmailLink();
 	}
 
 }

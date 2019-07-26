@@ -1,4 +1,7 @@
+org\autoframe\arpal\implement\HomeImplement.class
 org\autoframe\arpal\SetUp\Driver.class
+org\autoframe\arpal\helpers\Elements.class
 org\autoframe\arpal\SetUp\Trigger.class
 org\autoframe\arpal\Steps\Home.class
+org\autoframe\arpal\helpers\ComSelenium.class
 org\autoframe\arpal\SetUp\Runner.class
